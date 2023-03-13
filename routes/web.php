@@ -19,9 +19,6 @@ Route::get('/', function () {
 Route::get('/view-app', function () {
     return view('app');
 });
-// Route::get('/mahasiswa/{nama}', function ($nama) {
-//     return "Nama Mahasiswa : $nama";
-// });
 Route::get('/mahasiswa/{nama}', function ($nama) {
     return "Nama Mahasiswa : $nama";
 });
