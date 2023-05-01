@@ -32,3 +32,5 @@ Route::group(['prefix' => '/1901010126'], function () {
         return view('tambah');
     });
 });
+
+//Tugas 2
