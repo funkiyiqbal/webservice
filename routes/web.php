@@ -16,9 +16,19 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/view-app', function () {
+Route::get('/mahasiswa/{nim}', function ($nim) {
     return view('app');
 });
-Route::get('/mahasiswa/{nama}', function ($nama) {
-    return "Nama Mahasiswa : $nama";
+
+//Tugas
+Route::group(['prefix' => '/1901010126'], function () {
+    Route::get('/home', function () {
+        return view('index');
+    });
+    Route::get('/edit', function () {
+        return view('edit');
+    });
+    Route::get('/tambah', function () {
+        return view('tambah');
+    });
 });
