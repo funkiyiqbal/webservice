@@ -34,3 +34,4 @@ Route::group(['prefix' => '/1901010126'], function () {
 });
 
 //Tugas 2
+Route::get('blog', 'BlogController@index');
